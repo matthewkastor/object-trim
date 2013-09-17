@@ -1,6 +1,6 @@
 {
   "name": "atropa-object-trim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Trims empty values out of a given object. Empty values are '', undefined, null, [], {}, and objects with no enumerable properties.",
   "main": "./src/object-trim.js",
   "directories": {

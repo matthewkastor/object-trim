@@ -6,7 +6,7 @@ Trims empty values out of a given object. Empty values are '', undefined, null,
 ## Installation
 
 ```
-npm install object-trim
+npm install atropa-object-trim
 ```
 
 ## Usage
