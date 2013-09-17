@@ -1,0 +1,37 @@
+{
+  "name": "atropa-object-trim",
+  "version": "0.1.0",
+  "description": "Trims empty values out of a given object. Empty values are '', undefined, null, [], {}, and objects with no enumerable properties.",
+  "main": "./src/object-trim.js",
+  "directories": {
+    "lib": "src"
+  },
+  "devDependencies": {
+    "browserify": ">=2.29.1",
+    "jasmine-node": ">=1.11.0"
+  },
+  "scripts": {
+    "test": "jasmine-node specs/",
+    "buildBrowserModule" : "node dev/browserify.js"
+  },
+  "homepage" : "https://github.com/matthewkastor/object-trim/",
+  "bugs" : "https://github.com/matthewkastor/object-trim/issues",
+  "repository": {
+    "type" : "git",
+    "url" : "git://github.com/matthewkastor/object-trim.git"
+  },
+  "keywords": [
+    "object-trim"
+  ],
+  "author": {
+    "name"      : "Matthew Kastor",
+    "email"     : "matthewkastor@gmail.com",
+    "url"       : "https://plus.google.com/100898583798552211130"
+  },              
+  "license": "gpl-3.0",
+  "dependencies": {
+    "array-trim": ">=0.1.3",
+    "atropa-is-empty": ">=0.1.2",
+    "object-walk": ">=0.1.0"
+  }
+}
