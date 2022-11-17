@@ -1,37 +1,37 @@
 {
   "name": "atropa-object-trim",
-  "version": "0.1.2",
+  "version": "2022.11.16",
   "description": "Trims empty values out of a given object. Empty values are '', undefined, null, [], {}, and objects with no enumerable properties.",
   "main": "./src/object-trim.js",
   "directories": {
     "lib": "src"
   },
   "devDependencies": {
-    "browserify": ">=2.29.1",
+    "browserify": ">=17.0.0",
     "jasmine-node": ">=1.11.0"
   },
   "scripts": {
     "test": "jasmine-node specs/",
-    "buildBrowserModule" : "node dev/browserify.js"
+    "buildBrowserModule": "node dev/browserify.js"
   },
-  "homepage" : "https://github.com/matthewkastor/object-trim/",
-  "bugs" : "https://github.com/matthewkastor/object-trim/issues",
+  "homepage": "https://github.com/matthewkastor/object-trim/",
+  "bugs": "https://github.com/matthewkastor/object-trim/issues",
   "repository": {
-    "type" : "git",
-    "url" : "git://github.com/matthewkastor/object-trim.git"
+    "type": "git",
+    "url": "git://github.com/matthewkastor/object-trim.git"
   },
   "keywords": [
     "object-trim"
   ],
   "author": {
-    "name"      : "Matthew Kastor",
-    "email"     : "matthewkastor@gmail.com",
-    "url"       : "https://plus.google.com/100898583798552211130"
+    "name": "Matthew Kastor",
+    "email": "matthewkastor@gmail.com",
+    "url": "https://plus.google.com/100898583798552211130"
   },
   "licenses": [
     {
-        "type" : "gpl-3.0",
-        "url" : "http://www.gnu.org/licenses/gpl-3.0-standalone.html"
+      "type": "gpl-3.0",
+      "url": "http://www.gnu.org/licenses/gpl-3.0-standalone.html"
     }
   ],
   "dependencies": {
