@@ -7,12 +7,19 @@
     "lib": "src"
   },
   "devDependencies": {
+    "atropa-jsformatter": "git+https://github.com/matthewkastor/atropa-jsformatter.git#gh-pages",
+    "atropa-jslint": "git+https://github.com/matthewkastor/atropa-jslint.git#master",
     "browserify": ">=17.0.0",
-    "jasmine-node": ">=1.11.0"
+    "jasmine-node": ">=1.11.0",
+    "jsdoc-toolkit": "git+https://github.com/matthewkastor/node-jsdoc-toolkit.git#fix-tests"
   },
   "scripts": {
     "test": "jasmine-node specs/",
-    "buildBrowserModule": "node dev/browserify.js"
+    "buildBrowserModule": "node dev/browserify.js",
+    "srcFormat": "atropa-jsformatter ./src/object-trim.js ./src/object-trim.js",
+    "lint": "atropa-jslint ./src/object-trim.js",
+    "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/",
+    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./node_modules/jsdoc-toolkit/templates/vsdoc/ -r -s src/"
   },
   "homepage": "https://github.com/matthewkastor/object-trim/",
   "bugs": "https://github.com/matthewkastor/object-trim/issues",
@@ -35,8 +42,8 @@
     }
   ],
   "dependencies": {
-    "array-trim": ">=0.1.3",
-    "atropa-is-empty": ">=0.1.2",
-    "object-walk": ">=0.1.0"
+    "array-trim": "git+https://github.com/matthewkastor/array-trim.git#master",
+    "atropa-is-empty": "git+https://github.com/matthewkastor/atropa-is-empty.git#master",
+    "object-walk": "git+https://github.com/matthewkastor/object-walk.git#master"
   }
 }

@@ -1,3 +1,16 @@
+/*jslint
+    indent: 4,
+    maxerr: 50,
+    white: true,
+    node: true,
+    browser: true,
+    devel: true,
+    plusplus: true,
+    regexp: true
+*/
+/*global atropa */
+// end header
+
 /**
  * Trims empty values out of a given object. Empty values are '', undefined,
  *  null, [], {}, and objects with no enumerable properties.
